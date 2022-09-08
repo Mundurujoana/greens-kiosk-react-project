@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import Forms from "./Form";
+
 
 function App() {
+  // const[num, setNum] = useState(0);
+  // useEffect(() =>{
+  //   setNum(num+20)
+  // }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>
+
+{/* <p>{num}</p>
+<button onClick={()=>{setNum(num+1)}}> Click me</button> */}
+<Forms/>
+</div>
+  )
 }
 
 export default App;
