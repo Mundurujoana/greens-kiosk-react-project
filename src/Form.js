@@ -6,6 +6,33 @@ import {FaFacebook, FaLinkedin, FaGoogle} from "react-icons/fa"
 const back= new URL('./images/back.png',import.meta.url);
 
 
+const datas = [
+  {"id":1,
+   "fruitName": "apples",
+   "price": 20.00,
+  },
+  {"id":2,
+  "fruitName": "Bananas",
+  "price": 250.00,
+  },
+  {"id":3,
+ "fruitName": "Mangoes",
+ "price": 230.00,
+ },
+ {"id":4,
+ "fruitName": "apples",
+ "price": 420.00,
+},
+{"id":5,
+"fruitName": "Grapes",
+"price": 370.00,
+},
+{"id":6,
+"fruitName": "Melons",
+"price": 130.00,
+}
+]
+
 function Forms() {
   const[email, setEmail] = useState("");
   console.log(email)
@@ -19,6 +46,18 @@ function Forms() {
     alert(JSON.stringify(data));
   }
 
+  // return(
+  //   <div>
+  //     {datas.map(a =>(
+  //       <div key={a.id}>
+  //         <p>{a.fruitName}</p>
+  //         <small>{a.price}</small>
+  //       </div>
+  //     ) 
+  //       )}
+  //   </div>
+  // )
+  
     return (
          <div className="form-card">
             <div className="col-1">
@@ -47,7 +86,6 @@ function Forms() {
                     </div>
                 </form>
             </div>
-
 
             <div className="col-2">
               <p>Dont have an account? <span className="sign">Sign up</span></p> 

@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Forms from "./Form";
-
+import User from './User';
 
 function App() {
   // const[num, setNum] = useState(0);
@@ -12,7 +11,8 @@ function App() {
 
 {/* <p>{num}</p>
 <button onClick={()=>{setNum(num+1)}}> Click me</button> */}
-<Forms/>
+{/* <Forms/> */}
+<User/>
 </div>
   )
 }
